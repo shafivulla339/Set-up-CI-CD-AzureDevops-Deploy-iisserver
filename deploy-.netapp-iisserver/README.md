@@ -27,10 +27,12 @@ Now we can Select the Repository to Build the pipeline
 
 Now I am selecting the ASP .NET Build template as per source requirement.
  
-
-
 Now we will get the azure pipeline and if any modification required need to modify and click on the save and run button .
- 
+
+
+![image](https://user-images.githubusercontent.com/99337360/226183183-5088d613-b569-4911-aa98-574c04017672.png)
+
+
 
 Now I have Added the PublishBuildArtifact Steps mention below.
 
@@ -49,10 +51,13 @@ Now I have Added the PublishBuildArtifact Steps mention below.
 Select the Triggers to view the option to enable continuous Integration here we check the box to enable it and in the branch filters we have two options Exclude and Include in our case we will include the branch whenever new commits are done.
  
 Now we can manually trigger the pipeline and watch the pipeline work.
+
+![image](https://user-images.githubusercontent.com/99337360/226183213-a26eb184-3a3b-44d5-911b-d13b33e226fb.png)
+
  
 Now we can check the Artifact Published or not.  
  
-
+ ![image](https://user-images.githubusercontent.com/99337360/226183274-3d71065e-d8ba-4b1e-9a3c-e1874c935631.png)
 
 
 Step 2: Creating a Azure Virtual machine with Azure cloud:
@@ -154,7 +159,7 @@ Now that we have completed the reverse proxy configuration, we need to test our 
 We expect that anytime a user visits the URL, azureii-test.eastus.cloudapp.azure.com, we'll automatically reroute the corresponding request to azureiisserver.eastus.cloudapp.azure.com.
 As you can see below, when we type the URL into our web browser, we see the http://azureiisserver.eastus.cloudapp.azure.com/ website. It is actually being masked behind our reverse proxy website. Pretty cool, right?
  
-
+![image](https://user-images.githubusercontent.com/99337360/226183320-5f8e5c9a-ba9f-4b10-a248-a1c333b1296c.png)
 
 
 
