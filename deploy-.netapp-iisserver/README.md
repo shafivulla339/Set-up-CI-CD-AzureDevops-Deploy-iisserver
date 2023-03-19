@@ -146,6 +146,9 @@ This will forward any request coming into our reverse proxy to the origin server
 
 Once you have finished setting up the new rule, click Apply.
 We have configured our new website to act as a reverse proxy.
+
+
+
 Step 4: Test the Reverse Proxy:
 Now that we have completed the reverse proxy configuration, we need to test our new website.
 We expect that anytime a user visits the URL, azureii-test.eastus.cloudapp.azure.com, we'll automatically reroute the corresponding request to azureiisserver.eastus.cloudapp.azure.com.
