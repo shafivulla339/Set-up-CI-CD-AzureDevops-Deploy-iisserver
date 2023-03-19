@@ -1,8 +1,10 @@
 Azure DevOps CI/CD Pipeline to deploy .net application onto an IIS server
 Overview
 To publish a .net web app to a IIS server in an azure virtual machine. The main objective of this project was to configure, build and release pipelines to deploy the Windows (Windows Server 2016 Datacenter).
+
 1.Setup a Project in Azure Repos:
 Azure Repository is a set of version control tools that we can use to manage our code. In case if we are entirely new to version control, then version control enables us to track changes we make in our code over time. There is so many software that is available in the market to enable version control on our code.
+
     I have create the Project name of Practice-pipeline , and crate the repository name is MywebApp . and I have commit the code into the Azure repos. 
 URL: https://dev.azure.com/shaikshafivulla0734/Practice-Pieplines/_git/MyWebApp
 
@@ -11,6 +13,7 @@ URL: https://dev.azure.com/shaikshafivulla0734/Practice-Pieplines/_git/MyWebApp
 2.Setup the build pipeline:
       Two ways to setup the build pipeline. We can click on setup build, which will provide us most relevant build templates per the source and create the pipeline with YAML.
         Else we can go from the scratch by selecting pipelines → new pipeline → use the classic editor. We need to select the version control, project, repository and the branch to trigger the build. Providing the required data will take you to the editor to select a template.
+
 I have Build the pipeline using YAML script.
  
 Now we can Select the Repository to Build the pipeline
@@ -137,7 +140,7 @@ Take note of the capture group {R:0}. We will use this to configure our rewrite 
 Taking a closer look at our action section, we see the Rewrite URL input field. This field indicates where we want our website to point. Since we want to route back to our website, we put in the URL and append the regex capture group {R:0} from the previous test pattern.
 This will forward any request coming into our reverse proxy to the origin server tevpro.com keeping the URL fully intact.
  
- 
+
 Once you have finished setting up the new rule, click Apply.
 We have configured our new website to act as a reverse proxy.
 Step 4: Test the Reverse Proxy:
