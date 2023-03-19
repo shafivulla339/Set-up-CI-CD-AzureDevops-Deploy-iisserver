@@ -4,6 +4,7 @@ To publish a .net web app to a IIS server in an azure virtual machine. The main 
 
 1.Setup a Project in Azure Repos:
 Azure Repository is a set of version control tools that we can use to manage our code. In case if we are entirely new to version control, then version control enables us to track changes we make in our code over time. There is so many software that is available in the market to enable version control on our code.
+![image](https://user-images.githubusercontent.com/99337360/226182779-0447abd4-6f9b-4a9b-a68b-9a03c81345f1.png)
 
     I have create the Project name of Practice-pipeline , and crate the repository name is MywebApp . and I have commit the code into the Azure repos. 
 URL: https://dev.azure.com/shaikshafivulla0734/Practice-Pieplines/_git/MyWebApp
